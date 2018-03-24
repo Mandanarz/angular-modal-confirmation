@@ -1,0 +1,19 @@
+<div bsModal #confirmationModal="bs-modal" [config]="{backdrop: 'static', keyboard: false}" class="modal fade" tabindex="-1"
+  role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title pull-center">
+          {{status}}
+        </h3>
+      </div>
+      <div class="modal-body">
+        {{message}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="confirm(true)">Yes</button>
+        <button type="button" class="btn btn-secondary" (click)="decline()">No</button>
+      </div>
+    </div>
+  </div>
+</div>
